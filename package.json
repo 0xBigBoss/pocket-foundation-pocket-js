@@ -1,7 +1,9 @@
 {
-  "name": "@pokt-foundation/pocketjs-monorepo",
+  "name": "@0xbigboss/pocketjs-monorepo",
   "version": "0.0.3",
-  "private": true,
+  "authors": [
+    "BigBoss <0xbigboss@proton.me>"
+  ],
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -10,9 +12,9 @@
     "build": "turbo run build",
     "release": "RELEASE_MODE=true pnpm publish",
     "build:abstract-provider": "turbo run build --scope=*abstract-provider* --no-deps",
-    "build:pocket": "turbo run build --scope=@pokt-foundation/pocketjs --no-deps",
+    "build:pocket": "turbo run build --scope=@0xbigboss/pocketjs --no-deps",
     "build:provider": "turbo run build --scope=*provider* --no-deps",
-    "build:relayer": "turbo run build --scope=@pokt-foundation/relayer --no-deps",
+    "build:relayer": "turbo run build --scope=@0xbigboss/relayer --no-deps",
     "build:signer": "turbo run build --scope=*signer* --no-deps",
     "build:txs": "turbo run build --scope=*transaction* --no-deps",
     "build:types": "turbo run build --scope=*types* --no-deps",
@@ -20,7 +22,7 @@
     "dev": "turbo run dev --parallel",
     "dev:abstract-provider": "turbo run dev --scope=*abstract-provider* --no-cache --no-deps",
     "dev:all": "turbo run dev --parallel --no-cache",
-    "dev:pocket": "turbo run dev --scope=@pokt-foundation/pocketjs --no-cache --no-deps",
+    "dev:pocket": "turbo run dev --scope=@0xbigboss/pocketjs --no-cache --no-deps",
     "dev:provider": "turbo run dev --scope=*provider* --no-cache --no-deps",
     "dev:signer": "turbo run dev --scope=*signer* --no-cache --no-deps",
     "dev:txs": "turbo run dev --scope=*transaction* --no-deps",

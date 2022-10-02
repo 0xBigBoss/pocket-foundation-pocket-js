@@ -1,4 +1,4 @@
-import { TransactionResponse } from '@pokt-foundation/pocketjs-types'
+import { TransactionResponse } from '@0xbigboss/pocketjs-types'
 
 export class PocketCoreError extends Error {
   code: number

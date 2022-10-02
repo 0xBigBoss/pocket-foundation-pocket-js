@@ -1,12 +1,12 @@
-import { AbstractSigner, KeyManager } from '@pokt-foundation/pocketjs-signer'
-import { AbstractProvider } from '@pokt-foundation/pocketjs-abstract-provider'
+import { AbstractSigner, KeyManager } from '@0xbigboss/pocketjs-signer'
+import { AbstractProvider } from '@0xbigboss/pocketjs-abstract-provider'
 import {
   HTTPMethod,
   Node,
   PocketAAT,
   RelayHeaders,
   Session,
-} from '@pokt-foundation/pocketjs-types'
+} from '@0xbigboss/pocketjs-types'
 
 export abstract class AbstractRelayer {
   readonly keyManager: KeyManager | AbstractSigner

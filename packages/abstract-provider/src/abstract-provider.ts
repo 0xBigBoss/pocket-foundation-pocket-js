@@ -11,7 +11,7 @@ import {
   RawTxRequest,
   Transaction,
   TransactionResponse,
-} from '@pokt-foundation/pocketjs-types'
+} from '@0xbigboss/pocketjs-types'
 
 export abstract class AbstractProvider {
   // Account

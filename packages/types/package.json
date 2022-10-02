@@ -1,5 +1,5 @@
 {
-  "name": "@pokt-foundation/pocketjs-types",
+  "name": "@0xbigboss/pocketjs-types",
   "version": "2.1.0",
   "description": "PocketJS types",
   "type": "module",
@@ -17,7 +17,9 @@
   },
   "types": "dist/src/index.d.ts",
   "keywords": [],
-  "author": "",
+  "authors": [
+    "BigBoss <0xbigboss@proton.me>"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.4.0",

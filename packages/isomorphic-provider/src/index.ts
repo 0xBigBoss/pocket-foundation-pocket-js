@@ -21,7 +21,7 @@ import {
   SessionHeader,
   Transaction,
   TransactionResponse,
-} from '@pokt-foundation/pocketjs-types'
+} from '@0xbigboss/pocketjs-types'
 import {
   AbstractProvider,
   DispatchersFailureError,
@@ -29,8 +29,8 @@ import {
   TimeoutError,
   validateTransactionResponse,
   V1RpcRoutes,
-} from '@pokt-foundation/pocketjs-abstract-provider'
-import { hrtime } from '@pokt-foundation/pocketjs-utils'
+} from '@0xbigboss/pocketjs-abstract-provider'
+import { hrtime } from '@0xbigboss/pocketjs-utils'
 
 const DEFAULT_TIMEOUT = 1000
 

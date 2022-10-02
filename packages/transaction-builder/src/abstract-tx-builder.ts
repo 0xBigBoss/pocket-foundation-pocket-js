@@ -6,10 +6,7 @@ import {
   MsgProtoNodeUnstake,
   MsgProtoSend,
 } from './models/msgs'
-import {
-  RawTxRequest,
-  TransactionResponse,
-} from '@pokt-foundation/pocketjs-types'
+import { RawTxRequest, TransactionResponse } from '@0xbigboss/pocketjs-types'
 import { TxMsg } from './models/'
 
 export type ChainID = 'mainnet' | 'testnet' | 'localnet'

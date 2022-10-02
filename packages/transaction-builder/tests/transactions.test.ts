@@ -1,5 +1,5 @@
-import { KeyManager } from '@pokt-foundation/pocketjs-signer'
-import { JsonRpcProvider } from '@pokt-foundation/pocketjs-provider'
+import { KeyManager } from '@0xbigboss/pocketjs-signer'
+import { JsonRpcProvider } from '@0xbigboss/pocketjs-provider'
 import { ChainID, TransactionBuilder } from '../src/tx-builder'
 import {
   MsgProtoAppStake,
@@ -9,7 +9,7 @@ import {
   MsgProtoSend,
   MsgProtoNodeUnjail,
 } from '../src/models'
-import { RawTxRequest } from '@pokt-foundation/pocketjs-types'
+import { RawTxRequest } from '@0xbigboss/pocketjs-types'
 
 const PRIVATE_KEY =
   '1f8cbde30ef5a9db0a5a9d5eb40536fc9defc318b8581d543808b7504e0902bcb243b27bc9fbe5580457a46370ae5f03a6f6753633e51efdaf2cf534fdc26cc3'

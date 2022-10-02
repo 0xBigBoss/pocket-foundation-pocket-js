@@ -22,7 +22,7 @@ import {
   SessionHeader,
   Transaction,
   TransactionResponse,
-} from '@pokt-foundation/pocketjs-types'
+} from '@0xbigboss/pocketjs-types'
 import {
   AbstractProvider,
   DispatchersFailureError,
@@ -30,7 +30,7 @@ import {
   TimeoutError,
   validateTransactionResponse,
   V1RpcRoutes,
-} from '@pokt-foundation/pocketjs-abstract-provider'
+} from '@0xbigboss/pocketjs-abstract-provider'
 
 const DEFAULT_TIMEOUT = 1000
 

@@ -5,7 +5,7 @@ import debug from 'debug'
 import {
   getAddressFromPublicKey,
   publicKeyFromPrivate,
-} from '@pokt-foundation/pocketjs-utils'
+} from '@0xbigboss/pocketjs-utils'
 import scrypt from 'scrypt-js'
 import { InvalidPPKError } from './errors'
 import { AbstractSigner, Account } from './abstract-signer'

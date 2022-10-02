@@ -1,5 +1,5 @@
 {
-  "name": "@pokt-foundation/pocketjs-abstract-provider",
+  "name": "@0xbigboss/pocketjs-abstract-provider",
   "version": "2.1.0",
   "description": "Abstract provider for all other providers to inherit",
   "type": "module",
@@ -17,10 +17,12 @@
   },
   "types": "dist/src/index.d.ts",
   "keywords": [],
-  "author": "",
+  "authors": [
+    "BigBoss <0xbigboss@proton.me>"
+  ],
   "license": "ISC",
   "devDependencies": {
-    "@pokt-foundation/pocketjs-types": "workspace:*",
+    "@0xbigboss/pocketjs-types": "workspace:*",
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",

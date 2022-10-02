@@ -9,16 +9,16 @@ A complete, fast and slim SDK to interact with the Pocket Network.
 Add the packages for each part to your project:
 
 ```console
-yarn add @pokt-foundation/pocketjs-provider @pokt-foundation/pocketjs-signer @pokt-foundation/pocketjs-transaction-builder @pokt-foundation/pocketjs-relayer @pokt-foundation/pocketjs-utils
+yarn add @0xbigboss/pocketjs-provider @0xbigboss/pocketjs-signer @0xbigboss/pocketjs-transaction-builder @0xbigboss/pocketjs-relayer @0xbigboss/pocketjs-utils
 ```
 
 And use each piece as you see fit:
 
 ```javascript
-import { JsonRpcProvider } from "@pokt-foundation/pocketjs-provider";
-import { KeyManager } from "@pokt-foundation/pocketjs-signer";
-import { TransactionBuilder } from "@pokt-foundation/pocketjs-transaction-builder";
-import { Relayer } from "@pokt-foundation/pocketjs-relayer";
+import { JsonRpcProvider } from "@0xbigboss/pocketjs-provider";
+import { KeyManager } from "@0xbigboss/pocketjs-signer";
+import { TransactionBuilder } from "@0xbigboss/pocketjs-transaction-builder";
+import { Relayer } from "@0xbigboss/pocketjs-relayer";
 import {
   MAINNET_RPC_URL,
   DISPATCHERS,
@@ -53,7 +53,7 @@ export const transactionBuilder = new TransactionBuilder({
 
 // Create a new `Send` Message which is used to send funds over the network.
 const sendMsg = transactionBuilder.send(
-  signer.getAddress(), 
+  signer.getAddress(),
   "07a6fca4dea9f01e4c19f301df0d0afac128561b",
   // Amount in uPOKT (1 POKT = 1*10^6 uPOKT)
   "1000000"
@@ -89,6 +89,7 @@ const relay = await relayer.relay({
 ## Setting up
 
 Download the repo from Github, and just run `pnpm i` at the root folder. This will install all of the individual packages in the necessary order. If you'd like to build all packages manually, you'll need follow the order in which they're referenced:
+
 - Install `packages/utils`
 - Install `packages/types`
 - Install `packages/abstract-provider`

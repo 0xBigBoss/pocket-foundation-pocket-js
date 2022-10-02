@@ -1,5 +1,5 @@
 {
-  "name": "@pokt-foundation/pocketjs-utils",
+  "name": "@0xbigboss/pocketjs-utils",
   "version": "2.1.0",
   "description": "Utilities used across pocket-js",
   "type": "module",
@@ -17,7 +17,9 @@
   },
   "types": "dist/src/index.d.ts",
   "keywords": [],
-  "author": "",
+  "authors": [
+    "BigBoss <0xbigboss@proton.me>"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.4.0",

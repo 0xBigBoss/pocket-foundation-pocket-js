@@ -7,19 +7,21 @@ You'll need a staked aplication in the Pocket Network blockchain to use this pac
 To learn more about the relay lifecycle, reach for the [docs](https://docs.pokt.network/home/v0/protocol/servicing).
 
 ## Installation
+
 Install through your package manager of choice:
+
 ```
-pnpm install @pokt-foundation/pocketjs-relayer
+pnpm install @0xbigboss/pocketjs-relayer
 ```
 
 ## Usage
 
-```js 
-import { AbstractRelayer, Relayer } from '@pokt-foundation/pocketjs-relayer'
+```js
+import { AbstractRelayer, Relayer } from '@0xbigboss/pocketjs-relayer'
 
 // For the AbstractRelayer, just implement it!
 class MyRelayer extends AbstractRelayer {
- // Now override the required methods...
+  // Now override the required methods...
 }
 
 // Initializing the relayer is simple:
@@ -38,7 +40,7 @@ export const relayer = new Relayer({
   keyManager: signer,
   provider,
   dispatchers: DISPATCHERS,
-});
+})
 
 // Get a new session
 const session = await relayer.getNewSession({
@@ -53,32 +55,37 @@ const relay = await relayer.relay({
   pocketAAT: POCKET_AAT,
   session: session,
 })
-
 ```
 
 ## Relayer API
 
 ### Constructor
+
 #### keyManager
+
 - type: `KeyManager`
-The KeyManager instance that holds the staked app in the blockchain.
+  The KeyManager instance that holds the staked app in the blockchain.
 
 #### provider
+
 - type: `JsonRpcProvider` | `IsomorphicProvider`
-The provider instance with available dispatchers to talk to the network.
+  The provider instance with available dispatchers to talk to the network.
 
 #### dispatchers
+
 - type: `String[]`
-Backup set of dispatchers.
+  Backup set of dispatchers.
 
 ### Methods
+
 #### getNewSession({ applicationPubKey, chain, sessionBlockHeight, options }): Promise<Session>
+
 Performs a dispatch request to obtain a new session. Fails if no dispatcher is provided through the provider.
 
 Returns `Promise<Session>`: The dispatch response as a session.
 
 | Param                                | Type      | Description                                               |
-|--------------------------------------|-----------|-----------------------------------------------------------|
+| ------------------------------------ | --------- | --------------------------------------------------------- |
 | applicationPubKey                    | `string`  | The application's public key.                             |
 | chain                                | `string`  | The chain for the ssions.                                 |
 | sessionBlockHeight                   | `number`  | The session block height.                                 |
@@ -88,10 +95,11 @@ Returns `Promise<Session>`: The dispatch response as a session.
 | options.timeout                      | `number`  | Timeout before the call fails. In milliseconds.           |
 
 #### relay({ blockchain, data, headers, method, node, path, pocketAAT, session, options })
+
 Sends a relay to the network.
 
 | Param                                | Type      | Description                                                                 |
-|--------------------------------------|-----------|-----------------------------------------------------------------------------|
+| ------------------------------------ | --------- | --------------------------------------------------------------------------- |
 | blockchain                           | `string`  | The chain for the session.                                                  |
 | data                                 | `string`  | The data to send, stringified.                                              |
 | headers                              | `object`  | The headers to include in the call, if any.                                 |
@@ -103,4 +111,3 @@ Sends a relay to the network.
 | options.retryAttempts                | `number`  | The number of retries to perform if the first call fails.                   |
 | options.rejectSelfSignedCertificates | `boolean` | Option to reject self signed certificates or not.                           |
 | options.timeout                      | `number`  | Timeout before the call fails. In milliseconds.                             |
-

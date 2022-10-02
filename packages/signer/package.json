@@ -1,5 +1,5 @@
 {
-  "name": "@pokt-foundation/pocketjs-signer",
+  "name": "@0xbigboss/pocketjs-signer",
   "version": "2.1.0",
   "description": "Signer for Pocket Network V0 accounts",
   "type": "module",
@@ -18,10 +18,12 @@
   },
   "types": "dist/src/index.d.ts",
   "keywords": [],
-  "author": "",
+  "authors": [
+    "BigBoss <0xbigboss@proton.me>"
+  ],
   "license": "MIT",
   "devDependencies": {
-    "@pokt-foundation/pocketjs-types": "workspace:*",
+    "@0xbigboss/pocketjs-types": "workspace:*",
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
@@ -34,9 +36,9 @@
   },
   "dependencies": {
     "@noble/ed25519": "^1.5.3",
-    "@pokt-foundation/pocketjs-abstract-provider": "workspace:*",
-    "@pokt-foundation/pocketjs-provider": "workspace:*",
-    "@pokt-foundation/pocketjs-utils": "workspace:*",
+    "@0xbigboss/pocketjs-abstract-provider": "workspace:*",
+    "@0xbigboss/pocketjs-provider": "workspace:*",
+    "@0xbigboss/pocketjs-utils": "workspace:*",
     "buffer": "^6.0.3",
     "debug": "^4.3.3",
     "isomorphic-crypto": "^3.0.0",

@@ -1,8 +1,8 @@
 import crypto from 'isomorphic-webcrypto'
 import debug from 'debug'
 import sha3 from 'js-sha3'
-import { JsonRpcProvider } from '@pokt-foundation/pocketjs-provider'
-import { AbstractSigner, KeyManager } from '@pokt-foundation/pocketjs-signer'
+import { JsonRpcProvider } from '@0xbigboss/pocketjs-provider'
+import { AbstractSigner, KeyManager } from '@0xbigboss/pocketjs-signer'
 import {
   HTTPMethod,
   Node,
@@ -10,7 +10,7 @@ import {
   RelayHeaders,
   RelayPayload,
   Session,
-} from '@pokt-foundation/pocketjs-types'
+} from '@0xbigboss/pocketjs-types'
 import { AbstractRelayer } from './abstract-relayer'
 import {
   EmptyKeyManagerError,

@@ -1,5 +1,5 @@
 {
-  "name": "@pokt-foundation/pocketjs",
+  "name": "@0xbigboss/pocketjs",
   "version": "0.0.0",
   "description": "Umbrella package for most Pocket libraries",
   "type": "module",
@@ -17,7 +17,10 @@
   },
   "types": "dist/index.d.ts",
   "keywords": [],
-  "author": "Enrique Ortiz <hi@enriqueortiz.dev>",
+  "authors": [
+    "Enrique Ortiz <hi@enriqueortiz.dev>",
+    "BigBoss <0xbigboss@proton.me>"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.4.0",
@@ -31,6 +34,6 @@
     "ts-jest": "^27.1.3"
   },
   "dependencies": {
-    "@pokt-foundation/pocketjs-utils": "^0.0.0"
+    "@0xbigboss/pocketjs-utils": "workspace:*"
   }
 }

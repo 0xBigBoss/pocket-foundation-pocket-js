@@ -17,12 +17,12 @@
     "strict": true,
     "resolveJsonModule": true,
     "paths": {
-      "@pokt-foundation/pocketjs": ["packages/pocket"],
-      "@pokt-foundation/pocketjs-signer": ["packages/signer"],
-      "@pokt-foundation/pocketjs-provider": ["packages/provider"],
-      "@pokt-foundation/pocketjs-types": ["packages/types"],
-      "@pokt-foundation/pocketjs-utils": ["packages/utils"],
-      "@pokt-foundation/pocketjs-abstract-provider": ["packages/abstract-provider"]
+      "@0xbigboss/pocketjs": ["packages/pocket"],
+      "@0xbigboss/pocketjs-signer": ["packages/signer"],
+      "@0xbigboss/pocketjs-provider": ["packages/provider"],
+      "@0xbigboss/pocketjs-types": ["packages/types"],
+      "@0xbigboss/pocketjs-utils": ["packages/utils"],
+      "@0xbigboss/pocketjs-abstract-provider": ["packages/abstract-provider"]
     }
   }
 }

@@ -7,12 +7,9 @@ import {
   MsgProtoNodeUnstake,
   MsgProtoSend,
 } from './models/msgs'
-import { AbstractProvider } from '@pokt-foundation/pocketjs-abstract-provider'
-import { AbstractSigner } from '@pokt-foundation/pocketjs-signer'
-import {
-  RawTxRequest,
-  TransactionResponse,
-} from '@pokt-foundation/pocketjs-types'
+import { AbstractProvider } from '@0xbigboss/pocketjs-abstract-provider'
+import { AbstractSigner } from '@0xbigboss/pocketjs-signer'
+import { RawTxRequest, TransactionResponse } from '@0xbigboss/pocketjs-types'
 import { TxEncoderFactory } from './factory/tx-encoder-factory'
 import { CoinDenom, TxMsg, TxSignature } from './models/'
 import { InvalidChainIDError, NoProviderError, NoSignerError } from './errors'

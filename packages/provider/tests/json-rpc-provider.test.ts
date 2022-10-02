@@ -1,9 +1,9 @@
 import { MockAgent, setGlobalDispatcher } from 'undici'
 import { DEFAULT_URL } from './test-utils'
 import { JsonRpcProvider } from '../src/json-rpc-provider'
-import { V1RpcRoutes } from '@pokt-foundation/pocketjs-abstract-provider'
+import { V1RpcRoutes } from '@0xbigboss/pocketjs-abstract-provider'
 import { responseSamples } from './response-samples'
-import { RawTxRequest } from '@pokt-foundation/pocketjs-types'
+import { RawTxRequest } from '@0xbigboss/pocketjs-types'
 
 describe('JsonRpcProvider tests', () => {
   let provider: JsonRpcProvider
